@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_transaction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    tools:context="com.example.akhilesh.passbook.AddTransaction">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:id="@+id/Acc"
+        android:hint="Account"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Amou"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/CCD"
+        android:background="#ffffff"
+        android:hint="Cash/Cheque/Draft"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:id="@+id/Rem"
+        android:hint="Remark"
+        android:gravity="center"
+        android:layout_below="@+id/CCD"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:layout_marginTop="16dp"
+        android:id="@+id/DeWi"
+        android:gravity="center"
+        android:hint="Type:Deposite/Withdraw"
+        android:layout_below="@+id/Acc"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:id="@+id/Amou"
+        android:hint="Amount"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/DeWi"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:id="@+id/Date"
+        android:hint="Date"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Add Transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddTra"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/Date"
+        android:layout_alignStart="@+id/Date" />
+
+
+</RelativeLayout>
